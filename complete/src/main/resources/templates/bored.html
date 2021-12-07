@@ -74,6 +74,9 @@
                 dataType: 'json',
                 success: function(data){
                     console.log(data);
+                    $('.bored').html(
+                        '<p>(Activity)</p>' + data.activity + '<p>(Type)</p>' + data.type + '<p>(People Required)</p>' + data.participants + '<p>(Shared link if any)</p>' + data.link
+                    )
                 },
                 error: function(data){
                     console.log('error');
