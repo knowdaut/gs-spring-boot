@@ -19,4 +19,10 @@ public class HelloController {
 		return "greeting";
 	}
 
+
+	@GetMapping("/bored")
+	public String bored() {
+		return "bored";
+	}
+
 }
